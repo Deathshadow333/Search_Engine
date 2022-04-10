@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      let query = "home";
+
+      function searchweb() {
+        query = document.getElementById("searchinput").value;
+        window.location.href =
+          `https://cse.google.com/cse?cx=8536aad0ef76176ad&q=${query}`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="Image.jpg" alt="" />
+      <div class="searchwrapper">
+        <input
+          class="searchbar"
+          type="text"
+          name=""
+          id="searchinput"
+          spellcheck="false"
+        />
+        <div class="searchlogowrapper">
+          <!-- <a tag="searchlink"> -->
+          <img
+            class="searchlogo"
+            onclick="searchweb()"
+            src="https://img.icons8.com/ios-filled/344/search--v1.png"
+            width="30"
+            alt=""
+          />
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
